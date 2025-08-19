@@ -20,7 +20,7 @@ function About() {
           </ul>
         </div>
         <div className="relative">
-          <img src={pic2Img} alt="Gym interior" className="rounded-xl shadow-lg object-cover w-full h-80 md:h-[26rem]"/>
+          <img src={pic2Img} alt="Gym interior" loading="lazy" decoding="async" className="rounded-xl shadow-lg object-cover w-full h-80 md:h-[26rem]"/>
           <div className="absolute -bottom-6 -left-6 bg-blue-600 text-white px-6 py-4 rounded-lg shadow-lg">
             5,000+ Members Transformed
           </div>

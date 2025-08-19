@@ -33,7 +33,7 @@ function Blog() {
         <div className="grid md:grid-cols-3 gap-8">
           {posts.map((p, i) => (
             <article key={i} className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
-              <img src={p.img} alt={p.title} className="h-48 w-full object-cover" />
+              <img src={p.img} alt={p.title} loading="lazy" decoding="async" className="h-48 w-full object-cover" />
               <div className="p-6">
                 <p className="text-xs text-gray-500 mb-1">{p.date}</p>
                 <h4 className="text-xl font-bold mb-2">{p.title}</h4>
@@ -53,7 +53,7 @@ function Blog() {
       {selectedPost && (
         <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center px-4">
           <div className="bg-white rounded-xl shadow-xl max-w-2xl w-full overflow-hidden">
-            <img src={selectedPost.img} alt={selectedPost.title} className="h-56 w-full object-cover" />
+            <img src={selectedPost.img} alt={selectedPost.title} loading="lazy" decoding="async" className="h-56 w-full object-cover" />
             <div className="p-6">
               <p className="text-xs text-gray-500 mb-1">{selectedPost.date}</p>
               <h4 className="text-2xl font-extrabold mb-2">{selectedPost.title}</h4>

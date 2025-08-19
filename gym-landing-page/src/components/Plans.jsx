@@ -36,7 +36,7 @@ function Plans() {
           {plans.map((plan, idx) => (
             <div key={idx} className={`relative p-8 rounded-xl text-center shadow hover:shadow-xl transition border ${plan.highlight ? 'bg-blue-50 border-blue-200' : 'bg-gray-50 border-gray-200'}`}>
               {plan.highlight && <span className="absolute -top-3 left-1/2 -translate-x-1/2 text-xs bg-blue-600 text-white px-3 py-1 rounded-full">Popular</span>}
-              <img src={plan.img} alt={`${plan.name} plan`} className="w-16 h-16 object-cover rounded-full mx-auto mb-3 ring-4 ring-white shadow" />
+              <img src={plan.img} alt={`${plan.name} plan`} loading="lazy" decoding="async" className="w-16 h-16 object-cover rounded-full mx-auto mb-3 ring-4 ring-white shadow" />
               <h4 className="text-2xl font-extrabold mb-1">{plan.name}</h4>
               <p className="text-gray-600 mb-1">{plan.desc}</p>
               <p className="text-blue-600 font-bold text-2xl mb-4">{plan.price}</p>

@@ -47,7 +47,7 @@ function Testimonials() {
         <div className="grid md:grid-cols-3 gap-8">
           {reviews.map((r, i) => (
             <div key={i} className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
-              <img src={r.img} alt={r.name} className="w-16 h-16 rounded-full mx-auto mb-3 object-cover" />
+              <img src={r.img} alt={r.name} loading="lazy" decoding="async" className="w-16 h-16 rounded-full mx-auto mb-3 object-cover" />
               <div className="flex justify-center mb-2">
                 {[...Array(r.rating)].map((_, i) => (
                   <span key={i} className="text-yellow-400 text-lg">★</span>

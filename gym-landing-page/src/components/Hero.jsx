@@ -4,7 +4,7 @@ import heroBg from "../assets/background.jpeg";  // use your own image path here
 function Hero() {
   return (
     <section id="home"
-      className="relative h-[90vh] bg-cover bg-center bg-fixed flex items-center"
+      className="relative h-[90vh] bg-cover bg-center flex items-center"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>

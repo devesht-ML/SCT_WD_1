@@ -45,7 +45,7 @@ function Trainers() {
         <div className="grid md:grid-cols-3 gap-8">
           {trainers.map((trainer, idx) => (
             <div key={idx} className="bg-white p-6 rounded-xl text-center shadow hover:shadow-lg transition">
-              <img src={trainer.img} alt={trainer.name} className="w-28 h-28 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100" />
+              <img src={trainer.img} alt={trainer.name} loading="lazy" decoding="async" className="w-28 h-28 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100" />
               <h4 className="text-xl font-bold">{trainer.name}</h4>
               <p className="text-blue-600 font-medium">{trainer.expert}</p>
               <p className="text-gray-700 mt-2 text-sm">{trainer.bio}</p>

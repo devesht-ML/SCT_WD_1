@@ -44,7 +44,7 @@ function Programs() {
         <div className="grid md:grid-cols-3 gap-8">
           {data.map((item, index) => (
             <div key={index} className="bg-gray-100 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
-              <img src={item.img} alt={item.title} className="h-52 w-full object-cover" />
+              <img src={item.img} alt={item.title} loading="lazy" decoding="async" className="h-52 w-full object-cover" />
               <div className="p-6">
                 <h4 className="text-xl font-bold mb-1">{item.title}</h4>
                 <p className="text-gray-700 mb-4">{item.desc}</p>
