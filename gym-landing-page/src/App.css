@@ -1,0 +1,13 @@
+/* App.css */
+.container-center {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Example of custom button override */
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
